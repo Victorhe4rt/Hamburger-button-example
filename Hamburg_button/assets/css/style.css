@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=New+Tegomin&display=swap');
+
+
+/* web*/
+*{
+  margin:0;
+  padding:0; 
+  box-sizing: border-box;
+}
+body{
+ background-image:url(../img/deathbat_full.jpg);
+ background-size: 100%;
+ background-repeat: no-repeat;
+ background-image:center; 
+ font-family: 'IBM Plex Sans', sans-serif;
+
+}
+a{
+  text-decoration: none;
+  color:black;
+  
+}
+a:hover{
+ filter: invert(1);
+  transition: 0.5s;
+}
+
+.img-logo{
+  font-family: 'New Tegomin', serif;
+  font-size: 40px;
+  
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(224, 222, 222); 
+  border-radius:2px; 
+  opacity: 90%;
+ 
+}
+nav{
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-format{
+  display: none;
+}
+.nav-links{
+  display: flex;
+  margin: 10px;
+  
+}
+/* web */
+
+/* media querry */
+@media screen  and (min-width:420px) and (max-width:1000px)  {
+  body{
+    background-image: url(../img/deathbat.png);
+    background-repeat: no-repeat;
+    background-size: 175%;
+   
+  }
+  header{
+    height: 60px;
+    transition: 1.0s;
+  }
+
+  nav{
+    color:black;
+    display: none;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+.img-logo{
+    font-size:30px;
+    transition: 1.0s;
+ }
+.btn-format{
+    display: block;
+   border-style: none;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/hamburger-button.jpg);    
+    opacity: 90%;
+    border-radius:3px;  
+}
+.btn-format:hover{
+filter: invert(1);
+transition: 0.5s;
+}
+.img-logo-after{
+  display: none;
+}
+.header-after{
+   height: 630px;
+   
+ }
+
+ .btn-format-after{
+  display: none;
+}
+
+.nav-after{
+  color: black;
+  border-style: none;
+  font-size: 50px;
+  display: contents;
+  
+ 
+}
+
+.nav-links-after{
+  font-size: 90px;
+  margin: auto;
+  
+}
+
+
+}
+/* media querry */
